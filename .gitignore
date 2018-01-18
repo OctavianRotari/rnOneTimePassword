@@ -1,6 +1,7 @@
 
 # node.js
 #
-node_modules/
-npm-debug.log
-yarn-error.log
+functions/node_modules/
+functions/npm-debug.log
+functions/yarn-error.log
+functions/service_account.json

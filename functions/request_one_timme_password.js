@@ -1,3 +1,4 @@
+// @flow
 // admin is the service module
 const admin = require('firebase-admin');
 const twilio = require('./twilio');
@@ -30,8 +31,8 @@ module.exports = function(req, res) {
             .update({code: code, codeValid: true}, () => {
               return res.status(200).send({success: true});
             });
-        },
-      );
+        }
+      )
     })
     .catch(err => {
       res.status(422).send({error: err});
